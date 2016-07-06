@@ -1,0 +1,288 @@
+/*Styles for: Jermain Joseph Portfolio Website*/
+
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+/*	font: inherit;*/
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+    /*Styles */
+
+/*
+Colour Pallet
+black: #1C140D
+white: #fff
+green: #68F9C9
+*/
+
+/*Fonts*/
+/*Lora Regular */
+body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+/*Fira Mono OT*/
+h1, h2, h3, #web {
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#twitter {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/twitter-icon-green.svg) no-repeat;
+    text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#linkedin {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/linkedin-icon-green.svg) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#github {
+    display:block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/github-icon-green.svg) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#email {
+    display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/email-icon-green.svg) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1C140D;
+
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#jermain, #joseph {
+    font-size: 28px;
+}
+
+#joseph {
+    margin-bottom: 45px;
+}
+
+#title {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes circle {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(2)
+    }
+}
+.circle {
+    z-index: -1;
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #68F9C9;
+    border-radius: 50%;
+    position: absolute;
+    top: 205px;
+    left: 0;
+    right: 0;
+}
+
+.one {
+    animation: circle 3s infinite linear;
+}
+.two {
+    animation: circle 3.5s infinite linear;
+    animation-delay: 0.5s;
+}
+.three {
+    animation: circle 4s infinite linear;
+    animation-delay: 1s;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+#web{
+    padding-top: 8px;
+    height: 21px;
+}
+
+                /*Project 1*/
+.project1{
+    color: #fff;
+    width: auto;
+    background-color: #1C140D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#inter{
+    text-align: center;
+    font-size: 21px;
+    padding-top: 1em;
+}
+
+#circt{
+    font-size: 18px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#tool1{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+#link1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+#image1{
+    margin-top: 1em;
+    border: 3px solid #fff;
+}
+
+                     /*Project 2*/
+.project2{
+    color: #1C140D;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#ux{
+    text-align: center;
+    font-size: 21px;
+    padding-top: 1em;
+}
+
+#joy{
+    font-size: 18px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#tool2{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+#link2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+#image2{
+    margin-top: 1em;
+    border: 3px solid #1C140D;
+}
+
+.footer{
+    text-align: center;
+    color:  #fff;
+    background-color:  #1C140D;
+    padding-top:  1em;
+    padding-bottom: 1em;
+}
+
+#rlink {
+    color: #68F9C9;
+}
