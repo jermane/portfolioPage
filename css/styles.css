@@ -110,18 +110,8 @@ body{
 	overflow: hidden;
 }
 
-#email {
-    display: block;
-	width: 30px;
-	height: 30px;
-	background: url(../images/email-icon-green.svg) no-repeat;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
 .header {
-    width: 100vw;
+    width: auto;
     height: 50px;
     display: flex;
     flex-flow: row nowrap;
@@ -132,16 +122,18 @@ body{
 }
 
 .banner {
-    width: 100%;
+    width: auto;
     height: 250px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+     background-color: #fff;
 }
 
 #jermain, #joseph {
-    font-size: 28px;
+    font-size: 36px;
+    text-align: center;
 }
 
 #joseph {
@@ -164,32 +156,32 @@ body{
     }
 }
 .circle {
-    z-index: -1;
     margin: 0 auto;
     width: 45px;
     height: 45px;
     border: 2px solid #68F9C9;
     border-radius: 50%;
     position: absolute;
-    top: 205px;
+    top: 212px;
     left: 0;
     right: 0;
 }
 
 .one {
     animation: circle 3s infinite linear;
+    animation-delay: 0.1s;
 }
 .two {
-    animation: circle 3.5s infinite linear;
-    animation-delay: 0.5s;
+    animation: circle 3s infinite linear;
+    animation-delay: 1s;
 }
 .three {
-    animation: circle 4s infinite linear;
-    animation-delay: 1s;
+    animation: circle 3s infinite linear;
+    animation-delay: 2s;
 }
 
 h2 {
-    font-size: 21px;
+    font-size: 24px;
 }
 
 #web{
@@ -211,7 +203,6 @@ h2 {
 
 #inter{
     text-align: center;
-    font-size: 21px;
     padding-top: 1em;
 }
 
@@ -219,12 +210,39 @@ h2 {
     font-size: 18px;
     padding-top: 1em;
     padding-bottom: 1em;
+    text-align: center;
 }
 
+#sum1{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em;
+}
 #tool1{
+    display: flex;
     padding-top: 1em;
     padding-bottom: 0.5em;
+    text-align: center;
+    justify-content: center;
 }
+#tool1{
+    display: flex;
+    flex-direction: column;
+        
+}
+#tool1 h3{
+    flex-grow: 2;
+    padding-bottom: 1em;
+}
+#icons1, #icons2{
+    display: flex;
+    justify-content: center;
+}
+
+#icons1 img, #icons2 img{
+    padding: 3px;
+}
+
 #link1{
     display: flex;
     justify-content: center;
@@ -258,12 +276,33 @@ h2 {
     font-size: 18px;
     padding-top: 1em;
     padding-bottom: 1em;
+    text-align: center;
+
+}
+
+#sum2{
+    width: 100%;
+    text-align: center;
+
 }
 
 #tool2{
+    display: flex;
     padding-top: 1em;
     padding-bottom: 0.5em;
+    text-align: center;
+    justify-content: center;
 }
+#tool2{
+    display: flex;
+    flex-direction: column;
+        
+}
+#tool2 h3{
+    flex-grow: 2;
+    padding-bottom: 1em;
+}
+
 #link2{
     display: flex;
     justify-content: center;
@@ -285,4 +324,113 @@ h2 {
 
 #rlink {
     color: #68F9C9;
+}
+
+
+/*/////////////////////1st media query/////////////////*/
+
+@media (min-width: 620px ){
+    .header{
+        height: 80.90px;
+    }
+
+    #github{
+        width: 48.54px;
+        height: 48.54px;
+    }
+    #twitter{
+        width: 48.54px;
+        height: 48.54px;
+    }
+    #linkedin{
+        width: 48.54px;
+        height: 48.54px;
+    }
+    #content1, #content2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    #text2, #text1{
+        width: 300px;
+    }
+
+    #sum1, #sum2{
+        text-align: left;
+    }
+
+
+
+    #inter, #ux {
+        padding-bottom: 1em;
+    }
+    #jermain, #joseph {
+        font-size: 54px;
+    }
+    #dev, #des {
+        font-size: 36px;
+    }
+    .banner {
+        height: 500px;
+    }
+    .circle {
+        width: 90px;
+        height: 90px;
+        top: 365px;
+    }
+
+}
+
+/*/////////////////////2nd media query/////////////////*/
+
+
+/*
+@media (min-width: 800px){
+    #content1, #content2 {
+        padding-bottom: 2em;
+    }
+    #link1{
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url('../images/CircuitRunLg.png') no-repeat;
+
+      width: 369px; 
+      height: 244px; 
+      padding-left: 369px; 
+      border: 5px solid #fff;  
+    }
+    #link2{
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url('../images/JoyRideLg.png') no-repeat;
+      width: 369px; 
+      height: 244px; 
+      padding-left: 369px; 
+      border: 5px solid #1C140D;  
+    }
+    
+    #image1, #image2{
+        visibility: hidden;
+    }
+    #text2, #text1{
+        width: 369px;
+    }
+  
+}
+*/
+
+/*/////////////////////3rd media query////////////////*/
+
+@media (min-width: 960px){
+    html{
+        background-color: #68F9C9;
+    }
+    body{
+        width: 960px;
+    }
+
 }
